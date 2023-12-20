@@ -1,0 +1,2 @@
+# The Algorithms.
+ The Algorithms is a comprehensive repository encompassing a multitude of computer science algorithms. Developed during my studies at the Technical University of Munich and through independent study, this repository houses implementations in Java, Python, and C++. It serves as a compendium covering a wide array of algorithms studied in my academic journey, offering a practical resource for enthusiasts, students, and professionals in the field of computer science.
