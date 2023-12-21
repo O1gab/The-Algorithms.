@@ -8,8 +8,8 @@ public class QuickSort<T extends Comparable<T>> {
      *
      * @param array Array which needs to be sorted
      */
-    public void sort(T[] array) {
-        sort(array, 0, array.length - 1); // Call the helper sort method with initial array bounds
+    public T[] sort(T[] array) {
+        return sort(array, 0, array.length - 1); // Call the helper sort method with initial array bounds
     }
 
     /**
@@ -18,12 +18,13 @@ public class QuickSort<T extends Comparable<T>> {
      * @param low The lower bound of the array
      * @param high The highest bound of the array
      */
-    private void sort(T[] array, int low, int high) {
+    private T[] sort(T[] array, int low, int high) {
         if (low < high) {
             int pivotIndex = partition(array, low, high);
             sort(array, low, pivotIndex - 1); // Recursively sort the left part of the array before the pivot
             sort(array, pivotIndex + 1, high); // Recursively sort the right part of the array after the pivot
         }
+        return array;
     }
 
     /**
