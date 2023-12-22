@@ -11,6 +11,7 @@ public class RadixSort<T extends Comparable<T>> {
      * @param array Array which needs to be sorted
      */
      public int[] sort(int[] array) {
+         if (array.length == 0 || array.length == 1) return array;
          int[] positive = Arrays.stream(array).filter(num -> num >= 0).toArray();
          int[] negative = Arrays.stream(array).filter(num -> num < 0).toArray();
 
