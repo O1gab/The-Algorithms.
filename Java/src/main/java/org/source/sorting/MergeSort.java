@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class MergeSort<T extends Comparable<T>> {
     /**
-     * Implementation of the Quick Sort Algorithm using Generics
+     * Implementation of the Merge Sort Algorithm using Generics
      * worst case: O(n log n)
      *
      * @param array Array which needs to be sorted
@@ -13,6 +13,12 @@ public class MergeSort<T extends Comparable<T>> {
         return mergeSort(array, 0, array.length - 1);
     }
 
+    /**
+     * Helper method: Merge Sort Algorithm using three parameters for easier work
+     * @param array Array which needs to be sorted
+     * @param left Left part of array (from beginning)
+     * @param right Right part of array (from end)
+     */
     private T[] mergeSort(T[] array, int left, int right) {
         if (left < right) {
             int mid = (left + right) / 2;
@@ -23,6 +29,13 @@ public class MergeSort<T extends Comparable<T>> {
         return array;
     }
 
+    /**
+     * Helper method for merging
+     * @param array Array which needs to be sorted
+     * @param left Left part of array (from beginning)
+     * @param right Right part of array (from end)
+     * @param middle Middle of the given array
+     */
     private T[] merge(T[] array, int left, int middle, int right) {
         int n1 = middle - left + 1;
         int n2 = right - middle;
