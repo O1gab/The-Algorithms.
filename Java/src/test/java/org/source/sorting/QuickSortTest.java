@@ -1,14 +1,11 @@
 package org.source.sorting;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.ClassOrderer;
 import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Random;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class QuickSortTest {
     /**
@@ -20,6 +17,7 @@ public class QuickSortTest {
     void setUp() {
         this.quickSort = new QuickSort();
     }
+
     @Test
     void testEmptyArray() {
         Integer[] array = {};
