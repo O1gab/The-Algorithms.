@@ -23,7 +23,8 @@ public class LinearSearchRecursive<T extends Comparable<T>> {
      * @return Index of the value (if the value is not in the array, return -1)
      */
     private int search(T[] array, T value, int index) {
-        if (array[index] == value) return index;
+        if (array.length == 0) return -1;
+        if (array[index].equals(value)) return index;
         if (index == array.length - 1) return -1;
         return search(array, value, index + 1);
     }
