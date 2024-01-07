@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class SelectionSort<T extends Comparable<T>> {
     /**
-     * Implementation of the Quick Sort Algorithm using Generics
+     * Implementation of the Selection Sort Algorithm using Generics
      * worst case: O(n²)
      *
      * @param array Array which needs to be sorted
