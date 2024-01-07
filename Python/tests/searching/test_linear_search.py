@@ -4,7 +4,10 @@ sys.path.append('Python/src')
 from searching.linear_search import linear_search
 
 class TestLinearSearchFunction(unittest.TestCase):
+    """
+    Tests written using unittest
     
+    """
     def test_existing_value(self):
         array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         value = 5

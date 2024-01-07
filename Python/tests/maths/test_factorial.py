@@ -5,7 +5,10 @@ sys.path.append('Python/src')
 from maths.factorial import factorial, factorial_recursive
 
 class TestFactorialFunction(unittest.TestCase):
+    """
+    Tests written using unittest
     
+    """
     def test_factorial_of_zero(self):
         self.assertEqual(factorial(0), 1)
         self.assertEqual(factorial_recursive(0), 1)

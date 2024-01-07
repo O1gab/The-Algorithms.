@@ -4,9 +4,11 @@ import sys
 sys.path.append('Python/src')
 from maths.pow import pow, pow_recursive
 
-
 class TestPowFunction(unittest.TestCase):
+    """
+    Tests written using unittest
     
+    """
     def test_power_of_zero(self):
         self.assertEqual(pow(0, 0), 1)
         self.assertEqual(pow_recursive(0, 0), 1)
