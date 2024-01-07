@@ -1,5 +1,4 @@
 import unittest
-import random
 import sys
 sys.path.append('Python/src')
 from searching.binary_search import binary_search, binary_search_recursive
