@@ -3,7 +3,6 @@ import math
 """
 Calculates factorial of number n (n!)
 
-Tests written with unittest included
 """
 
 def factorial(number: int) -> int:

@@ -1,6 +1,6 @@
 def linear_search(array, value):
     """
-    The linear search algorithm that finds the index of a value in a sorted array
+    The linear search algorithm that finds the index of a value in an array
     
     Args:
     - array (list): A sorted list of elements (integers, floats, etc.).
