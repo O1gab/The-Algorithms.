@@ -35,7 +35,7 @@ if __name__ == "__main__":
     sorted_array = bubble_sort(array)
     print("Array after sorting:", sorted_array)
     
-    array = [3, 242, -191919, 82824, 2049, 4929, 0, 0, 0, 1]
+    array = [3, 242, -191919, 82825, 2049, 4929, 0, 0, 0, 1]
     print("Array before sorting:", array)
 
     sorted_array = bubble_sort(array)
